@@ -8,5 +8,5 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: Test deploy
-        run: echo "Runner picked up the job! $(date)"
+      - name: Run deploy script
+        run: sudo /home/sb-caddy/deploy.sh
