@@ -1,0 +1,12 @@
+name: Deploy to VM
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Test deploy
+        run: echo "Runner picked up the job! $(date)"
